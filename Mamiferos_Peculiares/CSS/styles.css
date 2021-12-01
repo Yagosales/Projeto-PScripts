@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+/* BODY STYLE*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: #03080d;
+}
+
+
+/* MENU HAMBUGER */
+
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+
+    height: 100px;
+    width: 100px;
+    background-color: #ffffff;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;
+}
+
+.checkbox .trace {
+    width: 30px;
+    height: 2px;
+    background-color: #03080d;
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+
+.checkbox .trace:nth-child(1) {
+    top: 26px;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(2) {
+    top: 46px;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(3) {
+    top: 66px;
+    transform: rotate(0);
+}
+
+#toggle {
+    display: none;
+}
+
+/* MENU */
+
+.menu {
+    position: fixed;
+    top: 28px;
+    right: 30px;
+    background-color: transparent;
+    height: 4px;
+    width: 10px;
+    border-radius: 0%;
+    box-shadow:  0px 0px 0px 0px #03080d;
+    z-index: -1;
+    transition: 450ms ease-in-out 0s;
+}
+
+.menu-items {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 450ms ease-in-out 0s;
+}
+
+.menu-items ul {
+    list-style-type: none;
+}
+
+.menu-items ul li a {
+    margin: 10px 0;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+
+/* MENU ANIMATION */
+
+#toggle:checked + .checkbox .trace {
+    background-color: #ffffff;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(1){
+    transform: rotate(45deg);
+    top: 47px;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(2){
+    transform: translate(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(3){
+    transform: rotate(-45deg);
+    top: 48px;
+}
+
+#toggle:checked + .checkbox {
+    background-color: #03080d;
+}
+
+#toggle:checked ~ .menu {
+    box-shadow: 0px 0px 0px 100vmax #03080d;
+    z-index: 1;
+}
+
+#toggle:checked ~.menu-items {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* LINKS */
+
+a {
+    text-decoration: none;
+}
+
+/* TEXT IN GENERAL */
+
+.title-and-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 100px;
+    position: relative;
+    letter-spacing: 4px;
+}
+
+.title-and-text h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.title-and-text h2 {
+    padding-top: 20px;
+}
+
+.title-and-text h3 {
+    max-width: 70%;
+}
+
+.title-and-text p {
+    font-size: 16px;
+    max-width: 80%;
+    text-indent: 35px;
+    text-transform: none;
+}
+
+.title-and-text ul, li {
+    text-transform: none;
+}
+
+.title-and-text .big-title {
+    font-size: 2.5rem;
+    max-width: 90%;
+}
+
+/* IMAGENS */
+
+.img-animals {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    background-color: #03080d;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/* CARDS */
+.cards-container-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0 50px 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #03080d;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.card-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-wrapper::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: block;
+    border: 2px solid #ffffff;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.card-wrapper h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+}
+
+
+.card-wrapper p {
+    font-size: 0;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    filter: none;
+}
+
+.card:hover > .card-wrapper::before {
+    height: 265px;
+    width: 265px;
+    opacity: 1;
+}
+
+.card:hover > .card-wrapper p{
+    opacity: 1;
+    visibility: visible;
+    font-size: 14px;
+}
+
+/* CARD IMAGES*/
+
+.card-container #ornitorrinco-main {
+    background-image: url(../Assets/img/ornitorrinco/perry.jpg);
+}
+
+.card-container #equidina-main {
+    background-image: url(../Assets/img/equidna/porcoespinho.jpg);
+}
+
+.card-container #toupeira-main {
+    background-image: url(../Assets/img/toupeira-nariz-de-estrela/toupeira-nariz-de-estrela\ \(1\).png);
+}
+
+/* Button */
+
+.btn {
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+}
+  
+.button {
+    background-color: white;
+    border: 2px solid black;
+    color: #03080d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+  
+  .button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-containers{
+    align-items: center;
+    justify-content: center;
+    vertical-align: auto;
+}
+
+/* FOOTER */
+
+.footer {
+
+    bottom: 0px;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #03080d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    font-weight: bold;
+  }
+  
+

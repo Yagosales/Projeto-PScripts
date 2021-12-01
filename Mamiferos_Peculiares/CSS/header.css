@@ -1,0 +1,231 @@
+
+.header{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height:50vw;
+  min-height:400px;
+  max-height:700px;
+  min-width:300px;
+  color:#eee;
+}
+.header:after{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  z-index:-1;
+ background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgb(0, 0, 0) 150%);
+}
+
+.header:before{
+  content:"";
+  width: 100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0); backface-visibility: hidden;
+  scale:(1.0, 1.0);
+    transform: translateZ(0);
+  background:#1B2030 url(../Assets/main-banner.png) 50% 0 no-repeat;
+  background-size:100%;
+  background-attachment:fixed;
+  animation: grow 360s  linear 10ms infinite;
+  transition:all 0.4s ease-in-out;
+  z-index:-2
+}
+
+.header-equidina{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height:50vw;
+  min-height:400px;
+  max-height:500px;
+  min-width:300px;
+  color:#eee;
+}
+.header-equidina:after{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  z-index:-1;
+ background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgb(0, 0, 0) 150%);
+}
+
+.header-equidina:before{
+  content:"";
+  width:100%;
+  height:200%;
+  position:absolute;
+  top:0;
+  left:0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0); backface-visibility: hidden;
+  scale:(1.0, 1.0);
+    transform: translateZ(0);
+  background:#1B2030 url(../Assets/img/equidna/equidina-banner.png) 50% 0 no-repeat;
+  background-size:100%;
+  background-attachment:fixed;
+  animation: grow 360s  linear 10ms infinite;
+  transition:all 0.4s ease-in-out;
+  z-index:-2
+}
+
+
+
+.header-ornitorrinco{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height:50vw;
+  min-height:400px;
+  max-height:500px;
+  min-width:300px;
+  color:#eee;
+}
+.header-ornitorrinco:after{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  z-index:-1;
+ background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgb(0, 0, 0) 150%);
+}
+
+.header-ornitorrinco:before{
+  content:"";
+  width:100%;
+  height:200%;
+  position:absolute;
+  top:0;
+  left:0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0); backface-visibility: hidden;
+  scale:(1.0, 1.0);
+    transform: translateZ(0);
+  background:#1B2030 url(../Assets/img/ornitorrinco/Ornitorrinco-banner.png) 50% 0 no-repeat;
+  background-size:100%;
+  background-attachment:fixed;
+  animation: grow 360s  linear 10ms infinite;
+  transition:all 0.4s ease-in-out;
+  z-index:-2
+}
+
+
+
+.header-toupeira{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height:50vw;
+  min-height:400px;
+  max-height:500px;
+  min-width:300px;
+  color:#eee;
+}
+.header-toupeira:after{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  z-index:-1;
+ background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgb(0, 0, 0) 150%);
+}
+
+.header-toupeira:before{
+  content:"";
+  width:100%;
+  height:200%;
+  position:absolute;
+  top:0;
+  left:0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0); backface-visibility: hidden;
+  scale:(1.0, 1.0);
+    transform: translateZ(0);
+  background:#1B2030 url(../Assets/img/toupeira-nariz-de-estrela/toupeira-banner.png) 50% 0 no-repeat;
+  background-size:100%;
+  background-attachment:fixed;
+  animation: grow 360s  linear 10ms infinite;
+  transition:all 0.4s ease-in-out;
+  z-index:-2
+}
+
+@media (min-width: 900px){
+
+  .header{
+   max-height: 500px;
+  }
+  .header-ornitorrinco{
+    max-height: 500px;
+  }
+  .header-toupeira{
+    max-height: 550px;
+  }
+  .header-equidina{
+    max-height: 500px;
+  }
+
+  }
+
+  @media (min-width: 1600px){
+
+    .header{
+     max-height: 700px;
+    }
+    .header-ornitorrinco{
+      max-height: 700px;
+    }
+    .header-toupeira{
+      max-height: 750px;
+    }
+    .header-equidina{
+      max-height: 700px;
+    }
+  
+    }
+  
+    @media (min-width: 2048px){
+
+      .header{
+       max-height: 900px;
+      }
+      .header-ornitorrinco{
+        max-height: 900px;
+      }
+      .header-toupeira{
+        max-height: 950px;
+      }
+      .header-equidina{
+        max-height: 900px;
+      }
+    
+      }

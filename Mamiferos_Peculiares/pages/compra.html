@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="stylesheet" href="../CSS/compra.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parabéns</title>
+  </head>
+
+  <body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let data = new Date();
+            let dia = String(data.getDate()).padStart(2, '0');
+            let mes = String(data.getMonth()).padStart(2, '0');
+            let ano = data.getFullYear();
+
+            var vetorMes = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+
+            let msg = "Jundiaí, " + dia + " de " + vetorMes[mes] + " de " + ano;
+
+            //console.log(msg)
+            document.getElementById("textoFinal").value = msg
+        }, false); 
+        </script>
+    <div class="checkbox-container">
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="toggle" />
+        <label class="checkbox" for="toggle">
+          <div class="trace"></div>
+          <div class="trace"></div>
+          <div class="trace"></div>
+        </label>
+        <div class="menu"></div>
+        <nav class="menu-items">
+          <ul>
+            <li>
+              <a href="index.html">Página principal</a>
+            </li>
+
+            <li>
+              <a href="pages/informacoes.html">Informaçoes</a>
+            </li>
+
+            <li>
+              <a href="pages/doacoes.html">Loja</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <main>
+      <div class="title-and-text">
+
+        <h1>Parabéns sua compra foi concluída com sucesso!</h1>
+        <img src="../Assets/certo.png" alt="sucesso!">
+        <p>Sua compra foi realizada com sucesso e a entrega ocorrerá dentro dos próximos dias <br> Obrigado por comprar conosco, sua compra ajuda a manter tais criaturas</p>
+        <h4>Data da realização do processo:</h4>
+        <input type="text" id="textoFinal"  readonly>
+      </div>
+    </main>
+    <div class="btn">
+      <a href="informacoes.html" class="button"
+        >Voltar
+      </a>
+    </div>
+    <footer class="footer">
+      Feito por João Victor Hayato Tsuchiya de Oliveira, Mateus H. Aguiar e Yago
+      D. Sales.
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="stylesheet" href="../CSS/products.css" />
+    <script src="../Js/card.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja</title>
+  </head>
+
+  <body>
+    <div class="checkbox-container">
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="toggle" />
+        <label class="checkbox" for="toggle">
+          <div class="trace"></div>
+          <div class="trace"></div>
+          <div class="trace"></div>
+        </label>
+        <div class="menu"></div>
+        <nav class="menu-items">
+          <ul>
+            <li>
+              <a href="../index.html">Página principal</a>
+            </li>
+
+            <li>
+              <a href="informacoes.html">Informaçoes</a>
+            </li>
+
+            <li>
+              <a href="doacoes.html">Loja</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <main>
+      <div class="title-and-text">
+        <h1>Loja</h1>
+        <h4>
+          Comprando uma de nossas camisetas você estará ajudando a a preservar
+          essas criaturas únicas que também merecem um pouco de amor.
+        </h4>
+      </div>
+
+      <form action="compra.html" method="get" name="productsForms">
+        <div class="cards-container-container">
+          <div id="product-card">
+            <div id="product-front">
+              <div class="text-overlay-container" style="position: relative">
+                <img
+                  class="product-image"
+                  id="ornitorrincoImage"
+                  src="../Assets/img/ornitorrinco/ornitorrinco-product.jpg"
+                  alt="Camiseta de ornitorrinco"
+                  onmousemove="mostrarDetalhes('ornitorrincoImage', 'ornitorrincoTXT')"
+                  onmouseout="ocultarDetalhes('ornitorrincoImage', 'ornitorrincoTXT')"
+                />
+                <div
+                  class="textOverImage"
+                  id="ornitorrincoTXT"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    top: 8px;
+                    left: 16px;
+                  "
+                >
+                  <ul>
+                    <li>Camiseta Unisex</li>
+                    <li>Material: algodão 100%</li>
+                    <li>Gola: redonda</li>
+                    <li>100% Vegano</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="stats">
+                <div class="stats-container">
+                  <span class="product_price">R$49,90</span>
+                  <span class="product_name">Camiseta Ornitorrinco</span>
+                  <p>
+                    Quantidade:
+                    <input
+                      class="select-number"
+                      type="number"
+                      name="ornitorrincoQte"
+                      value="0"
+                      onblur="precoMostrador()"
+                      min="0"
+                      onKeyDown="return false"
+                      required
+                    />
+                  </p>
+                  <span>Tamanho: &nbsp&nbsp&nbsp</span>
+
+                  <select
+                    name="tamanho"
+                    class="select-size"
+                    name="ornitorrinco-size"
+                  >
+                    <option value="pp">PP</option>
+                    <option value="p">P</option>
+                    <option value="m">M</option>
+                    <option value="g">G</option>
+                    <option value="gg">GG</option>
+                    <option value="xg">XG</option>
+                    <option value="xgg">XGG</option>
+                    <option value="eg">EG</option>
+                    <option value="egg">EGG</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="product-card">
+            <div id="product-front">
+              <div class="text-overlay-container" style="position: relative">
+                <img
+                  class="product-image"
+                  id="equidinaImage"
+                  src="../Assets/img/equidna/equidina-product.jpg"
+                  alt="Camiseta de equidina"
+                  onmousemove="mostrarDetalhes('equidinaImage', 'equidinaTXT')"
+                  onmouseout="ocultarDetalhes('equidinaImage', 'equidinaTXT')"
+                />
+                <div
+                  class="textOverImage"
+                  id="equidinaTXT"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    top: 8px;
+                    left: 16px;
+                  "
+                >
+                  <ul>
+                    <li>Camiseta Unisex</li>
+                    <li>Material: algodão 100%</li>
+                    <li>Gola: redonda</li>
+                    <li>100% Vegano</li>
+                  </ul>
+                </div>
+                <div class="stats">
+                  <div class="stats-container">
+                    <span class="product_price">R$49,90</span>
+                    <span class="product_name">Camiseta Equidina</span>
+
+                    <p>
+                      Quantidade:
+                      <input
+                        class="select-number"
+                        type="number"
+                        name="equidinaQte"
+                        value="0"
+                        onblur="precoMostrador()"
+                        min="0"
+                        onKeyDown="return false"
+                        required
+                      />
+                    </p>
+                    <span>Tamanho: &nbsp&nbsp&nbsp</span>
+
+                    <select
+                      name="tamanho"
+                      class="select-size"
+                      name="equidina-size"
+                    >
+                      <option value="pp">PP</option>
+                      <option value="p">P</option>
+                      <option value="m">M</option>
+                      <option value="g">G</option>
+                      <option value="gg">GG</option>
+                      <option value="xg">XG</option>
+                      <option value="xgg">XGG</option>
+                      <option value="eg">EG</option>
+                      <option value="egg">EGG</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="product-card">
+            <div id="product-front">
+              <div class="text-overlay-container" style="position: relative">
+                <img
+                  id="toupeiranarizImage"
+                  src="../Assets/img/toupeira-nariz-de-estrela/toupeira-product.jpg"
+                  alt="Camiseta toupeira-nariz-de-estrela"
+                  onmousemove="mostrarDetalhes('toupeiranarizImage', 'toupeiraTXT')"
+                  onmouseout="ocultarDetalhes('toupeiranarizImage', 'toupeiraTXT')"
+                />
+                <div
+                  class="textOverImage"
+                  id="toupeiraTXT"
+                  style="
+                    visibility: hidden;
+                    position: absolute;
+                    top: 8px;
+                    left: 16px;
+                  "
+                >
+                  <ul>
+                    <li>Camiseta Unisex</li>
+                    <li>Material: algodão 100%</li>
+                    <li>Gola: redonda</li>
+                    <li>100% Vegano</li>
+                  </ul>
+                </div>
+
+                <div class="stats">
+                  <div class="stats-container">
+                    <span class="product_price">R$49,90</span>
+                    <span class="product_name">Camiseta nariz estrela</span>
+
+                    <p>
+                      Quantidade:
+                      <input
+                        class="select-number"
+                        type="number"
+                        name="toupeiraQte"
+                        value="0"
+                        onblur="precoMostrador()"
+                        onKeyDown="return false"
+                        required
+                        min="0"
+                      />
+                    </p>
+                    <span>Tamanho: </span>
+
+                    <select
+                      name="tamanho"
+                      class="select-size"
+                      name="toupeira-size"
+                    >
+                      <option value="pp">PP</option>
+                      <option value="p">P</option>
+                      <option value="m">M</option>
+                      <option value="g">G</option>
+                      <option value="gg">GG</option>
+                      <option value="xg">XG</option>
+                      <option value="xgg">XGG</option>
+                      <option value="eg">EG</option>
+                      <option value="egg">EGG</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <input
+          type="text"
+          class="preco"
+          value="R$0,00"
+          name="resultado"
+          readonly
+        />
+
+        <div class="form-form">
+          <hr style="height: 2px" />
+
+          <div class="info">
+            <span>Número do cartão</span>
+            <input
+              type="text"
+              id="txt_cardNumber"
+              name="txt_cardNumber"
+              inputmode="numeric"
+              placeholder="xxxx xxxx xxxx xxxx"
+              class="long-camp"
+              maxlength="16"
+              required
+            />
+            <br />
+            <span>Data de validade</span>
+            <div class="dates">
+              <span>Mês</span>
+              <input
+                class="select-date"
+                type="number"
+                name="mes"
+                class="long-camp"
+                min="1"
+                max="12"
+                value="1"
+                required
+              />
+              <span>ano</span>
+              <input
+                class="select-date"
+                type="number"
+                name="ano"
+                class="long-camp"
+                min="2021"
+                value="2021"
+                required
+              />
+            </div>
+
+            <br />
+            <span>CVC/CVV</span>
+            <input
+              type="text"
+              inputmode="numeric"
+              maxlength="3"
+              placeholder="xxx"
+              class="long-camp"
+              required
+            />
+            <br />
+            <span>Nome no cartão</span>
+            <input
+              type="text"
+              name="nome-no-cartao"
+              class="long-camp"
+              required
+            />
+          </div>
+
+          <div class="bandeiras">
+            <p>Selecione o tipo do cartão:</p>
+            <label for="debitar">Débito</label>
+            <input
+              type="radio"
+              name="cartao"
+              id="debitar"
+              class="credito-ou-debito"
+              value="Debito"
+              required
+            />
+            <label for="creditar">Crédito</label>
+            <input
+              type="radio"
+              name="cartao"
+              id="creditar"
+              class="credito-ou-debito"
+              value="Credito"
+            />
+            <p>São aceitas essas badeiras de cartão:</p>
+            <img src="../Assets/img/bandeiras/visa.png" alt="visa" />
+            &nbsp&nbsp&nbsp
+            <img
+              src="../Assets/img/bandeiras/mastercard.png"
+              alt="mastercard"
+            />
+          </div>
+        </div>
+
+      
+        <center>
+          <div class="naoRobo">
+            <input type="checkbox" id="naoRobo" required>
+            <label for="naoRobo">Eu não sou um robo!</label>
+          </div>
+          <input
+            id="finalizar"
+            type="submit"
+            value="Finalizar pedido"
+            class="final"
+          />
+        </center>
+      </form>
+    </main>
+
+    <footer class="footer">
+      Feito por João Victor Hayato Tsuchiya de Oliveira, Mateus H. Aguiar e Yago
+      D. Sales.
+    </footer>
+  </body>
+</html>

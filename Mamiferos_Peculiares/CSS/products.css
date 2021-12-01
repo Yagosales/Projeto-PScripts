@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+/* --- Product Card ---- */
+
+#product-card{
+
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	max-width:325px;
+	max-height:400px;
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+
+.stats-container{
+
+	background: #f1f1f1;	
+	left:0;
+	width:265px;
+	max-width: 325px;
+	height:150px;
+	padding:27px 35px 35px;	
+}
+
+.stats-container .product_name{
+
+	font-size:22px;
+	color:#393c45;	
+}
+.stats-container p{
+
+	font-size:16px;
+	color:black;	
+	padding:2px 0 20px 0;
+}
+
+.stats-container .product_price{
+
+	float:right;
+	color:#48cfad;
+	font-size:22px;
+	font-weight:600;
+}
+
+
+.select-number {
+	padding-left: 10px;
+	max-width: 40px;
+	float: right;
+	border: solid black 2px;
+	border-radius: 5px;
+	font-family: "Poppins", sans-serif;
+}
+
+img  {
+	width: 335px;
+	height: 335px;
+	overflow: hidden;
+}
+
+.select-size {
+	width: 65px;
+	height: 25px;
+	padding-right: 10px;
+	float: right;
+	border: solid black 2px;
+	border-radius: 5px;
+	font-family: "Poppins", sans-serif;
+}
+
+.form-form {
+	padding-top: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 80px;
+	padding-left: 0px;
+}
+
+.info {
+	display:grid;
+	border-right: 2px solid;
+	padding-right: 120px;
+	width: 35%;
+}
+
+.info input{
+	margin-left: 20px;
+	float: right;
+	border: solid black 2px;
+	border-radius: 5px;
+	font-family: "Poppins", sans-serif;
+}
+
+.info .long-camp {
+	width: 20rem;
+}
+
+.bandeiras{
+	padding-left: 40px;
+	width: 35%;
+}
+
+.bandeiras img {
+	width: 50px;
+	height: 30px;
+}
+
+.preco {
+	padding-right: 25px;
+	float: right;
+	color: black;
+	height: 50px;
+	width: 150px;
+	border: solid black 2px;
+	border-radius: 5px;
+	font-family: "Poppins", sans-serif;
+	font-size: 30px;
+	margin-left: 50px;
+	margin-right: 10%;
+}
+
+.final {
+	cursor: pointer;
+	color: black;
+	height: auto;
+	width: 200px;
+	border: solid black 2px;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	margin-bottom: 50px;
+	background-color: white;
+}
+
+.select-date {
+	margin-left: 5px;
+	margin-right: 20px;
+	max-width: 60px;
+	float: right;
+	border: solid black 2px;
+	border-radius: 5px;
+	font-family: "Poppins", sans-serif;
+}
+
+.dates{
+	display:flex;
+}
+
+
+
+
+.naoRobo {
+	padding-bottom: 20px;
+	font-size: 24px;
+}
+
+#naoRobo {
+	margin-right: 10px;
+	transform: scale(2)
+}
+
+
